@@ -1,0 +1,3 @@
+[submodule "java/pact.io"]
+	path = java/pact.io
+	url = https://github.com/knoldus/pact.io.git
