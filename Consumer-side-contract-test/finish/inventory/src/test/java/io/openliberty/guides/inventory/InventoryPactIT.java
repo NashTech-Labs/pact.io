@@ -1,16 +1,3 @@
-// tag::copyright[]
-/*******************************************************************************
- * Copyright (c) 2021 IBM Corporation and others.
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
- *
- * Contributors:
- *     IBM Corporation - initial API and implementation
- *******************************************************************************/
-// end::copyright[]
-
 package io.openliberty.guides.inventory;
 
 import au.com.dius.pact.consumer.dsl.PactDslJsonArray;
@@ -33,9 +20,7 @@ public class InventoryPactIT {
   // tag::mockprovider[]
   @Rule
   public PactProviderRule mockProvider = new PactProviderRule("System", this);
-  // end::mockprovider[]
 
-  // tag::pact[]
   @Pact(consumer = "Inventory")
   // end::pact[]
   // tag::builder[]
